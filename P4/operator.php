@@ -21,6 +21,23 @@ $hasilOr = $a || $b;
 $hasilNotA = !$a;
 $hasilNotB = !$b;
 
+$a += $b;
+echo "Hasil setelah penjumlahan (+=): " . $a . "<br>";
+$a -= $b;
+echo "Hasil setelah pengurangan (-=): " . $a . "<br>";
+$a *= $b;
+echo "Hasil setelah perkalian (*=): " . $a . "<br>";
+$a /= $b;
+echo "Hasil setelah pembagian (/=): " . $a . "<br>";
+$a %= $b;
+echo "Hasil setelah modulus (%=): " . $a . "<br>";
+
+$hasilIdentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
+
+echo "Apakah \$a identik dengan \$b? " . var_export($hasilIdentik, true) . "<br>";
+echo "Apakah \$a tidak identik dengan \$b? " . var_export($hasilTidakIdentik, true) . "<br>";
+
 echo "Hasil AND (&&) antara \$a dan \$b: " . var_export($hasilAnd, true) . "<br>";
 echo "Hasil OR (||) antara \$a dan \$b: " . var_export($hasilOr, true) . "<br>";
 echo "Hasil NOT (!\$a): " . var_export($hasilNotA, true) . "<br>";
