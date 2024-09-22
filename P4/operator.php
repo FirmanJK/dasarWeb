@@ -42,9 +42,9 @@ $PresentasiKursi = ($jumlahKursiKosong / $totalKursi) * 100;
 
 echo "Total kursi restoran: $totalKursi <br>";
 echo "Total kursi terpakai: $kursiTerpakai <br>";
-echo "Persentase kursi yang masih kosong: " . $PresentasiKursi . "%";
+echo "Persentase kursi yang masih kosong: " . $PresentasiKursi . "%" . "<br>";
 
-echo "Apakah \$a identik dengan \$b? " . var_export($hasilIdentik, true) . "<br>";
+echo "Apakah \$a identik dengan \$b? " . var_export($hasilIdentik, true) . "<br>" ;
 echo "Apakah \$a tidak identik dengan \$b? " . var_export($hasilTidakIdentik, true) . "<br>";
 
 echo "Hasil AND (&&) antara \$a dan \$b: " . var_export($hasilAnd, true) . "<br>";
