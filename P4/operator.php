@@ -35,6 +35,15 @@ echo "Hasil setelah modulus (%=): " . $a . "<br>";
 $hasilIdentik = $a === $b;
 $hasilTidakIdentik = $a !== $b;
 
+$totalKursi = 45;
+$kursiTerpakai = 28;
+$jumlahKursiKosong = $totalKursi - $kursiTerpakai;
+$PresentasiKursi = ($jumlahKursiKosong / $totalKursi) * 100;
+
+echo "Total kursi restoran: $totalKursi <br>";
+echo "Total kursi terpakai: $kursiTerpakai <br>";
+echo "Persentase kursi yang masih kosong: " . $PresentasiKursi . "%";
+
 echo "Apakah \$a identik dengan \$b? " . var_export($hasilIdentik, true) . "<br>";
 echo "Apakah \$a tidak identik dengan \$b? " . var_export($hasilTidakIdentik, true) . "<br>";
 
