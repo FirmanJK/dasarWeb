@@ -1,15 +1,19 @@
 <?php
-function perkenalan($nama, $salam) {
+//membuat fungsi
+function perkenalan($nama, $salam = "Assalamualaikum") {
     echo "$salam, ";
     echo "Perkenalkan, nama saya ".$nama."<br/>";
     echo "Senang berkenalan dengan Anda<br/>";
 }
 
-// Menggunakan variabel untuk nama dan salam
+//memanggil fungsi yang sudah dibuat
+perkenalan("Hamdana", "Hallo");
+
+echo "<hr>";
+
 $saya = "Elok";
 $ucapanSalam = "Selamat pagi";
 
-// Memanggil fungsi dengan parameter yang berbeda-beda
-perkenalan($saya, $ucapanSalam);
-perkenalan("Hamdana", "Hallo");
+//memanggil lagi tanpa mengisi parameter salam
+perkenalan($saya);
 ?>
