@@ -26,8 +26,8 @@ th, td {
 }
 
 th {
-  background-color: #6c7ae0;
-  color: white;
+  background-color: #f2f2f2;
+  color: black;
 }
 
 tr:nth-child(even) {
@@ -36,4 +36,20 @@ tr:nth-child(even) {
 
 tr:hover {
   background-color: #e1e5f2;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
