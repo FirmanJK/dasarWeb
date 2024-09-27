@@ -1,5 +1,5 @@
 <?php
-ffunction perkenalan($nama, $salam) {
+function perkenalan($nama, $salam) {
     echo "$salam, ";
     echo "Perkenalkan, nama saya ".$nama."<br/>";
     echo "Senang berkenalan dengan Anda<br/>";
