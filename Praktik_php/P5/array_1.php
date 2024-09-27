@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Menampilkan Array dengan Perulangan</title>
 </head>
 <body>
-<h2>Array Terindeks</h2>
-<p>
-<?php
-    $Listdosen = ["Elok Nur Hamdana", "Unggul Pamenang", "Bagas Nugraha"];
+    <h2>Array Terindeks</h2>
 
-    $jumlahDosen = count($Listdosen);
+    <?php
+    $listDosen = ["Elok Nur Hamdana", "Unggul Pamenang", "Bagas Nugraha"];
 
-    for ($i = 0; $i < $jumlahDosen; $i++) {
-        echo $Listdosen[$i] . "<br>";
-}
-?>
-</p>
+    // Menggunakan perulangan for
+    for ($i = 0; $i < count($listDosen); $i++) {
+        echo $listDosen[$i] . "<br>";
+    }
+    ?>
 </body>
 </html>
