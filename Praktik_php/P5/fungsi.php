@@ -1,20 +1,15 @@
 <?php
-//membuat fungsi untuk menghitung umur
-function hitungUmur($thn_lahir, $thn_sekarang) {
-    $umur = $thn_sekarang - $thn_lahir;
-    return $umur;
-}
-
-//membuat fungsi untuk perkenalan
-function perkenalan($nama, $salam="Assalamualaikum") {
-    echo $salam.", ";
+ffunction perkenalan($nama, $salam) {
+    echo "$salam, ";
     echo "Perkenalkan, nama saya ".$nama."<br/>";
-
-    //memanggil fungsi hitungUmur di dalam fungsi perkenalan
-    echo "Saya berusia ". hitungUmur(1988, 2023)." tahun<br/>";
     echo "Senang berkenalan dengan Anda<br/>";
 }
 
-//memanggil fungsi perkenalan dengan nama "Elok"
-    perkenalan("Elok");
+// Menggunakan variabel untuk nama dan salam
+$saya = "Elok";
+$ucapanSalam = "Selamat pagi";
+
+// Memanggil fungsi dengan parameter yang berbeda-beda
+perkenalan($saya, $ucapanSalam);
+perkenalan("Hamdana", "Hallo");
 ?>
