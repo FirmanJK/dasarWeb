@@ -1,42 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            text-align: left;
-            padding: 8px;
-            border: 1px solid #ddd;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Data Dosen</title>
+ 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Daftar Dosen</h2>
-    <table>
-        <tr>
-            <th>No</th>
-            <th>Nama Dosen</th>
-        </tr>
-        <?php
-        $Listdosen = ["Elok Nur Hamdana", "Unggul Pamenang", "Bagas Nugraha"];
+    <h2>Tabel Data Dosen</h2>
+<?php
 
-        $jumlahDosen = count($Listdosen);
+$Dosen = [
+    'nama' => 'Elok Nur Hamdana',
+    'domisili' => 'Malang',
+    'jenis_kelamin' => 'Perempuan'
+];
 
-        for ($i = 0; $i < $jumlahDosen; $i++) {
-            echo "<tr>";
-            echo "<td>" . ($i + 1) . "</td>";
-            echo "<td>" . $Listdosen[$i] . "</td>";
-            echo "</tr>";
-        }
-        ?>
-    </table>
+
+echo "<table>";
+echo "<tr><th>Nama</th><td>{$Dosen['nama']}</td></tr>";
+echo "<tr><th>Domisili</th><td>{$Dosen['domisili']}</td></tr>";
+echo "<tr><th>Jenis Kelamin</th><td>{$Dosen['jenis_kelamin']}</td></tr>";
+echo "</table>";
+?>
+
 </body>
 </html>
