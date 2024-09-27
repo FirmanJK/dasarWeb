@@ -21,19 +21,11 @@ $menu = [
 function tampilkanMenuBertingkat(array $menu) {
     echo "<ul>";
 
-    foreach ($menu as $item) {
-        echo "<li>";
-        echo $item['nama'];
-
-        if (isset($item['subMenu'])) {
-            tampilkanMenuBertingkat($item['subMenu']);
+    foreach ($menu as $key => $item) {
+        echo "<li>{$item['nama']}</li>";
         }
-
-        echo "</li>";
+        echo "</ul>";
     }
-
-    echo "</ul>";
-}
 
 tampilkanMenuBertingkat($menu);
 ?>
