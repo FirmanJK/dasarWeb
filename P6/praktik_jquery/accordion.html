@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Accordion Sederhana</title>
+  <link rel="stylesheet" href="jquery-ui-1.14.0.custom/jquery-ui.css">
+  <script src="jquery-3.7.1.js"></script>
+  <script src="jquery-ui-1.14.0.custom/jquery-ui.js"></script>
+  <script>
+    $(function() {
+      $("#jquery_accordion").accordion({
+        headerTemplate: "<h3 class='ui-accordion-header ui-accordion-header-collapsed'><span class='ui-icon ui-icon-triangle-1-s'></span>{title}</h3>"
+      });
+    });
+  </script>
+  <style>
+    #jquery_accordion {
+      background-color: floralwhite;
+      color: #0f0101;
+      width: 650px;
+    }
+
+    .ui-accordion-header .ui-icon {
+      float: right;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="jquery_accordion">
+    <h3>header 1</h3>
+    <div>
+      <p>This is section 1.
+        Place your content here in paragraphs or use div elements etc. </p>
+    </div>
+    <h3>header 2</h3>
+    <div>
+      <p>This is section 2. You can also include images like this : </p>
+      <img src="gambar2.jpg" alt="">
+    </div>
+    <h3>header 3</h3>
+    <div>
+      <p>This is section 3. Content can include listing as well.</p>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
