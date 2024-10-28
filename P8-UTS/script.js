@@ -22,7 +22,7 @@ $(document).ready(function() {
            
         } else if (average >= 76) {
             grade = 'A';
-            keterangan = 'Very Good';
+
         } else if (average >= 61) {
             grade = 'B';
            
