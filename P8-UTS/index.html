@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Nilai</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Input Nilai</h1>
+        <form id="nilaiForm" action="process.php" method="post">
+            <div class="form-group">
+                <label for="name">Nama :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nilai1">Nilai 1 :</label>
+                <input type="number" id="nilai1" name="nilai1" min="0" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nilai2">Nilai 2 :</label>
+                <input type="number" id="nilai2" name="nilai2" min="0" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nilai3">Nilai 3 :</label>
+                <input type="number" id="nilai3" name="nilai3" min="0" max="100" required>
+            </div>
+
+            <button type="submit" id="hasilBtn">Hasil</button>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+</html>                       
